@@ -80,7 +80,7 @@ const renderUser = doc => {
     `;
     tableUsers.insertAdjacentHTML('beforeend', tr);
     plusAcc();
-    btnAdd.remove();
+    removeAddBtn();
     
     // Click edit user
     const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
